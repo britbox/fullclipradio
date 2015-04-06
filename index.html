@@ -30,7 +30,27 @@
 
 <body>
 <div id="equalizer">
-<audio autoplay controls src="http://50.7.77.178:8194/;"></audio>
+<audio id="stream" src="http://50.7.77.178:8194/;"></audio>
+    <a href="#" id="audioControl">play!</a>
+
+    <script>
+        var stream = document.getElementById('stream'),
+                ctrl = document.getElementById('audioControl');
+
+        ctrl.onclick = function () {
+
+// Update the Button
+            var pause = ctrl.innerHTML === 'pause!';
+            ctrl.innerHTML = pause ? 'play!' : 'pause!';
+
+// Update the Audio
+            var method = pause ? 'pause' : 'play';
+            stream[method]();
+
+// Prevent Default Action
+            return false;
+        };
+    </script>
 </div>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.reverseorder.js"></script>
