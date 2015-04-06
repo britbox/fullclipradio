@@ -1,0 +1,66 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.fullclupradio" version="1.0.0">
+  <name>Full Clip Radio</name>
+  <description>BNE Hip Hop And RnB</description>
+  <author href="http://www.pacificwiard.com.au" email="info@pacificwizard.com.au">Pacific Wizard</author>
+  <content src="index.html"/>
+  <preference name="permissions" value="none"/>
+  <preference name="orientation" value="default"/>
+  <preference name="target-device" value="universal"/>
+  <preference name="fullscreen" value="true"/>
+  <preference name="webviewbounce" value="true"/>
+  <preference name="prerendered-icon" value="true"/>
+  <preference name="stay-in-webview" value="false"/>
+  <preference name="ios-statusbarstyle" value="black-opaque"/>
+  <preference name="detect-data-types" value="true"/>
+  <preference name="exit-on-suspend" value="false"/>
+  <preference name="show-splash-screen-spinner" value="true"/>
+  <preference name="auto-hide-splash-screen" value="true"/>
+  <preference name="disable-cursor" value="false"/>
+  <preference name="android-minSdkVersion" value="7"/>
+  <preference name="android-installLocation" value="auto"/>
+  <gap:plugin name="org.apache.cordova.battery-status"/>
+  <gap:plugin name="org.apache.cordova.camera"/>
+  <gap:plugin name="org.apache.cordova.media-capture"/>
+  <gap:plugin name="org.apache.cordova.console"/>
+  <gap:plugin name="org.apache.cordova.contacts"/>
+  <gap:plugin name="org.apache.cordova.device"/>
+  <gap:plugin name="org.apache.cordova.device-motion"/>
+  <gap:plugin name="org.apache.cordova.device-orientation"/>
+  <gap:plugin name="org.apache.cordova.dialogs"/>
+  <gap:plugin name="org.apache.cordova.file"/>
+  <gap:plugin name="org.apache.cordova.file-transfer"/>
+  <gap:plugin name="org.apache.cordova.geolocation"/>
+  <gap:plugin name="org.apache.cordova.globalization"/>
+  <gap:plugin name="org.apache.cordova.inappbrowser"/>
+  <gap:plugin name="org.apache.cordova.media"/>
+  <gap:plugin name="org.apache.cordova.network-information"/>
+  <gap:plugin name="org.apache.cordova.splashscreen"/>
+  <gap:plugin name="org.apache.cordova.vibration"/>
+  <icon src="icon.png"/>
+  <icon src="img/android-icon-36x36.png" gap:platform="android" gap:qualifier="ldpi"/>
+  <icon src="img/android-icon-48x48.png" gap:platform="android" gap:qualifier="mdpi"/>
+  <icon src="img/android-icon-72x72.png" gap:platform="android" gap:qualifier="hdpi"/>
+  <icon src="img/android-icon-96x96.png" gap:platform="android" gap:qualifier="xhdpi"/>
+  <icon src="img/blackberry-80.png" gap:platform="blackberry"/>
+  <icon src="img/blackberry-80.png" gap:platform="blackberry" gap:state="hover"/>
+  <icon src="img/apple-icon-57x57.png" gap:platform="ios" width="57" height="57"/>
+  <icon src="img/apple-icon-72x72.png" gap:platform="ios" width="72" height="72"/>
+  <icon src="img/apple-icon-114x114.png" gap:platform="ios" width="114" height="114"/>
+  <icon src="img/apple-icon-144x144.png" gap:platform="ios" width="144" height="144"/>
+  <icon src="img/webos-icon-64.png" gap:platform="webos"/>
+  <icon src="img/win-icon-48.png" gap:platform="winphone"/>
+  <icon src="img/win-icon-173-tile.png" gap:platform="winphone" gap:role="background"/>
+  <gap:splash src="img/android-ldpi-screen.png" gap:platform="android" gap:qualifier="port-ldpi"/>
+  <gap:splash src="img/android-mdpi-screen.png" gap:platform="android" gap:qualifier="port-mdpi"/>
+  <gap:splash src="img/android-hdpi-screen.png" gap:platform="android" gap:qualifier="port-hdpi"/>
+  <gap:splash src="img/android-xhdi-screen.png" gap:platform="android" gap:qualifier="port-xhdpi"/>
+  <gap:splash src="img/blackberry-screen-225.png" gap:platform="blackberry"/>
+  <gap:splash src="img/apple-splash-320x480.png" gap:platform="ios" width="320" height="480"/>
+  <gap:splash src="img/apple-splash-640x960.png" gap:platform="ios" width="640" height="960"/>
+  <gap:splash src="img/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136"/>
+  <gap:splash src="img/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
+  <gap:splash src="img/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
+  <gap:splash src="img/win-splashscreen.png" gap:platform="winphone"/>
+    <gap:splash src="img/webos-screen-64.png" gap:platform="webos"/>
+  <access origin="*"/>
+</widget>
