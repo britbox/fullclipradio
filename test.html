@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Test Functions</title>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta charset="utf-8">
+    <title>Test Functions</title>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
     <!-- App Icons - Apple -->
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -28,16 +28,43 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/jquery.equalizer.css" />
+    <link rel="stylesheet" href="css/jquery.equalizer.css"/>
 </head>
 
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">FULL CLIP</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Bootstrap theme</a>
         </div>
-
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
     </div>
 </nav>
 
@@ -625,9 +652,9 @@
     nunc,
 </div>
 <div id="equalizer">
-<audio id="stream" src="http://50.7.77.178:8194/;"></audio>
+    <audio id="stream" src="http://50.7.77.178:8194/;"></audio>
     <a href="#" id="audioControl">play!</a>
-<!--Appears to work-->
+    <!--Appears to work-->
     <script>
         var stream = document.getElementById('stream'),
                 ctrl = document.getElementById('audioControl');
