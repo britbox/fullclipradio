@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mandy's Interactive Animal Sounds</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="YES"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="copyright" content="Copyright 2014 Amanda Brown"/>
+    <link rel="apple-touch-icon" href="image/loader.png"/>
+    <link rel="apple-touch-startup-image" href="image/splash.png"/>
+
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.3.min.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.3.min.js"></script>
+    <script src="phonegap.js"></script>
+
+    <link rel="stylesheet" href="themes/mandysanimals.min.css"/>
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css"/>
+
+    <script type="text/javascript">
+        function playSound(el, soundfile) {
+            if (el.mp3) {
+                if (el.mp3.paused) el.mp3.play();
+                else el.mp3.pause();
+            } else {
+                el.mp3 = new Audio(soundfile);
+                el.mp3.play();
+            }
+        }
+    </script>
+</head>
+
+<body>
+<!--Start Home Page-->
+<div data-role="page" id="pageone">
+    <div data-role="header" data-theme="b">
+        <h1>Interactive Animals</h1>
+    </div>
+
+    <div data-role="content" class="ui-content">
+        <p style="text-align:center;">Welcome to Mandy's Animals App</p>
+
+        <div style="text-align:center;">
+            <a href="#" onclick="document.location.href='petanimals.html';" alt="Pet Animals" title="Pet Animals">
+                <img src="images/PetAnimals.jpg" width="200" height="200" alt="Pet Animals"/>
+            </a>
+            <a href="#" onclick="document.location.href='farmanimals.html';" alt="Farm Animals" title="Farm Animals">
+                <img src="images/FarmAnimals.jpg" width="200" height="200" alt="Farm Animals"/>
+            </a>
+            <a href="#" onclick="document.location.href='wildanimals.html';" alt="Wild Animals" title="Wild Animals">
+                <img src="images/wildanimals.jpg" width="200" height="200" alt="Wild Animals"/>
+            </a>
+            <a href="#" onclick="document.location.href='quiz.html';" alt="Quiz" title="Quizs">
+                <img src="images/quiz.jpg" width="200" height="200" alt="Quiz"/>
+            </a>
+        </div>
+    </div>
+
+    <div data-role="footer">
+        <h1>&copy; Mandy Brown 2014</h1>
+    </div>
+</div>
+<!--End Home Page-->
+<script type="text/javascript">
+    function backKeyDown() {
+        document.location('index.html');
+    }
+</script>
+</body>
+</html>
