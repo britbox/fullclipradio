@@ -35,7 +35,15 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">FULL CLIP</a>
+            <div class="col-xs-5" style="padding-left:0px;">
+                <img src="img/fullclip.jpg" class="img-responsive">
+            </div>
+            <div class="col-xs-2">&nbsp;
+            </div>
+            <div class="col-xs-5 pull-right" style="padding-right:0px;">
+
+                <a href="#" id="audioControl"><img src="img/listen.jpg" class="img-responsive  pull-right"></a>
+            </div>
         </div>
 
     </div>
@@ -43,12 +51,31 @@
 
 <div class="container theme-showcase" role="main">
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-        <h1>Theme example</h1>
+    <div class="equalizer-container col-xs-12" style="background-color:#E2E2E2;overflow:hidden">
 
-        <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point
-            to create something more unique by building on or modifying it.</p>
+        <div id="equalizer">
+            <audio id="stream" src="http://50.7.77.178:8194/;"></audio>
+
+            <!--Appears to work-->
+            <script>
+                var stream = document.getElementById('stream'),
+                        ctrl = document.getElementById('audioControl');
+
+                ctrl.onclick = function () {
+
+// Update the Button
+                    var pause = ctrl.innerHTML === '<img src="img/stop.jpg" class="img-responsive  pull-right" alt="Stop">';
+                    ctrl.innerHTML = pause ? '<img src="img/listen.jpg" class="img-responsive  pull-right" alt="Listen">' : '<img src="img/stop.jpg" class="img-responsive  pull-right" alt="Stop">';
+
+// Update the Audio
+                    var method = pause ? 'pause' : 'play';
+                    stream[method]();
+
+// Prevent Default Action
+                    return false;
+                };
+            </script>
+        </div>
     </div>
 
 
@@ -609,46 +636,23 @@
 
 
 </div>
-<div class="row clearfix">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-    vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-    mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-    Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
-    feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
-    ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus
-    eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-    vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero
-    venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla
-    mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
-    nunc,
-</div>
-<div id="equalizer">
-<audio id="stream" src="http://50.7.77.178:8194/;"></audio>
-    <a href="#" id="audioControl">play!</a>
-<!--Appears to work-->
-    <script>
-        var stream = document.getElementById('stream'),
-                ctrl = document.getElementById('audioControl');
 
-        ctrl.onclick = function () {
 
-// Update the Button
-            var pause = ctrl.innerHTML === 'pause!';
-            ctrl.innerHTML = pause ? 'play!' : 'pause!';
+<div class="footer navbar-fixed-bottom  footer-inverse">
+    <div class="container">
+        <div class="navbar-footer">
+            <div class="row-fluid">
+                <div class="col-xs-2" style="width:20%;padding-left:0px; text-align:center !important;"><a href="#"
+                                                                                                           class="footerlink"><img
+                        src="img/nav-icon-home.png" alt="Home" class="img-responsive"></a></div>
+                <div class="col-xs-2" style="width:20%;"><a href=#" class="footerlink">3</a></div>
+                <div class="col-xs-2" style="width:20%;"><a href=#" class="footerlink">4</a></div>
+                <div class="col-xs-2" style="width:20%;"><a href=#" class="footerlink">f</a></div>
+                <div class="col-xs-2" style="width:20%;padding-right:0px;"><a href="#" class="footerlink">ff</a></div>
+            </div>
+        </div>
 
-// Update the Audio
-            var method = pause ? 'pause' : 'play';
-            stream[method]();
-
-// Prevent Default Action
-            return false;
-        };
-    </script>
-</div>
-<div class="footer navbar-fixed-bottom navbar navbar-inverse">
-    Jipatti
+    </div>
 </div>
 
 <script type="text/javascript" src="js/bootstrap.min.js"></script>

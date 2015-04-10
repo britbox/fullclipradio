@@ -1,0 +1,57 @@
+.navbar-header {
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.navbar-footer {
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.container > .navbar-header, .container > .navbar-collapse, .navbar-header .col-xs-6 {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar-inverse {
+    background-color: #282829 !important;
+    border-color: #080808;
+}
+
+.footer-inverse {
+    background: -webkit-linear-gradient(#F2F2F3, #B4B3B4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#F2F2F3, #B4B3B4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#F2F2F3, #B4B3B4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#F2F2F3, #B4B3B4); /* Standard syntax */
+    border-top-width: 1px;
+    border-top-color: #282829;
+
+}
+
+.equalizer-container {
+
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 75px;
+    height: 100px;
+    background-color: grey;
+}
+
+.footerlink {
+    width: 100%;
+    text-align: center;
+    background-color: green;
+}
+
+.navbar-fixed-bottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-fixed-bottom img {
+    margin: 0 auto;
+}
