@@ -26,3 +26,20 @@ function loadPage(url, onleave, onenter) {
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
 }
+
+function init() {
+
+    $(".page").hide();
+    $("#index").show();
+}
+function changepage(pageid, nav) {
+    $(".page").hide();
+    currentpage = "#" + pageid;
+    $(pageid).show();
+    $("#nav1").removeClass("current");
+    $("#nav2").removeClass("current");
+    $("#nav3").removeClass("current");
+    $("#nav4").removeClass("current");
+    $("#nav5").removeClass("current");
+    $(nav).addClass("current");
+}

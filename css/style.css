@@ -44,7 +44,6 @@
 
     padding-left: 0px;
     padding-right: 0px;
-    margin-top: 75px;
     height: 100px;
     background-color: grey;
 }
@@ -140,4 +139,16 @@ h2.heart {
     background-image: url(../img/icon-heart.png);
     background-repeat: no-repeat;
     background-position-x: 5px;
+}
+
+.page {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 75px;
+}
+
+.btn-success {
+    background-color: #AEBD26 !important;
+    border-color: #939F20 !important;
 }

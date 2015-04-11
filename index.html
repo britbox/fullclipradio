@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.equalizer.css" />
+
+
 </head>
 
 <body>
@@ -49,8 +51,8 @@
     </div>
 </nav>
 
-<div id="maincontainer" class="container theme-showcase" role="main">
-
+<div id="maincontainer" class="container theme-showcase" data-role="page" role="main">
+    <div class="page" id="index">
     <div class="equalizer-container col-xs-12" style="background-color:#E2E2E2;overflow:hidden">
 
         <div id="equalizer">
@@ -77,30 +79,45 @@
             </script>
         </div>
     </div>
-    <div id="home-competitions" class="col-xs-12">
-        <div class="rowpadding98">
-            <div class="col-xs-4"><img src="img/competition-soulfest.jpg" alt="Competition" class="img-responsive"
-                                       style="margin-right:5px;"/></div>
-            <div class="col-xs-5"><h3>COMPETITIONS</h3>
-
-                <p>Keep an eye on this space for competitions!</p></div>
-            <div class="col-xs-3 bigmore">&gt;</div>
-        </div>
-    </div>
-    <div id="new-projects" class="col-xs-12"></div>
+        <div id="home-competitions" class="col-xs-12"></div>
     <div class="row">
         <div class="col-xs-12 floated">
             <h2 class="heart">WHAT'S TRENDING</h2>
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-12 floated">
-            <img src="img/home-trending.jpg" class="img-responsive" alt="What's Trending..."/>
+        <div id="home-trending" class="row">
+
         </div>
     </div>
 
+    <div class="page" id="trending">
+
+    </div>
+    <div class="page" id="whatshot">
+        Whats Hot
+    </div>
+    <div class="page" id="competitions">
+        Competitions
+    </div>
+
+    <div class="page" id="contact">
+        <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+            fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+            justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper
+            nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+            laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+            nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
+            sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+            Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis
+            ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec
+            sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</h1>
+    </div>
 
 </div>
+
 
 
 <div class="footer navbar-fixed-bottom  footer-inverse">
@@ -108,16 +125,21 @@
         <div class="navbar-footer">
             <div class="row-fluid">
                 <div id="nav1" class="col-xs-2 current"
-                     style="width:20%;padding-left:0px; text-align:center !important;"><a href="#"
+                     style="width:20%;padding-left:0px; text-align:center !important;"><a
+                        href="javascript:changepage('#index','#nav1');"
                                                                                                            class="footerlink"><img
                         src="img/nav-icon-home.png" alt="Home" class="img-responsive"></a></div>
-                <div id="nav2" class="col-xs-2" style="width:20%;"><a href="#" class="footerlink"><img
+                <div id="nav2" class="col-xs-2" style="width:20%;"><a href="javascript:changepage('#contact','#nav2');"
+                                                                      class="footerlink"><img
                         src="img/nav-icon-shows.png" alt="Shows" class="img-responsive"></a></div>
-                <div id="nav3" class="col-xs-2" style="width:20%;"><a href="#" class="footerlink"><img
+                <div id="nav3" class="col-xs-2" style="width:20%;"><a href="javascript:changepage('#contact','#nav3');"
+                                                                      class="footerlink"><img
                         src="img/nav-icon-events.png" alt="Events" class="img-responsive"></a></div>
-                <div id="nav4" class="col-xs-2" style="width:20%;"><a href="#" class="footerlink"><img
+                <div id="nav4" class="col-xs-2" style="width:20%;"><a href="javascript:changepage('#contact','#nav4');"
+                                                                      class="footerlink"><img
                         src="img/nav-icon-whatshot.png" alt="Whats Hot" class="img-responsive"></a></div>
-                <div id="nav5" class="col-xs-2" style="width:20%;padding-right:0px;"><a href="#" class="footerlink"><img
+                <div id="nav5" class="col-xs-2" style="width:20%;padding-right:0px;"><a
+                        href="javascript:changepage('#contact','#nav5');" class="footerlink"><img
                         src="img/nav-icon-contact.png" alt="Contact" class="img-responsive"></a></div>
             </div>
         </div>
@@ -129,12 +151,17 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.reverseorder.js"></script>
 <script type="text/javascript" src="js/jquery.equalizer.js"></script>
-<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 <script type="text/javascript" src="js/html5shiv.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 <script type="text/javascript">
-
-    $("#new-projects").load("http://www.pacificwizard.com.au/mobileapps/fullclipradio-webservices/competitions.php?salt=V655LBV");
+    /* Load current modules */
+    $("#home-competitions").load("http://www.pacificwizard.com.au/mobileapps/fullclipradio-webservices/competitions-home.php?salt=V655LBV");
+    $("#home-trending").load("http://www.pacificwizard.com.au/mobileapps/fullclipradio-webservices/trending-home.php?salt=V655LBV");
+    $("#trending").load("http://www.pacificwizard.com.au/mobileapps/fullclipradio-webservices/trending.php?salt=V655LBV");
+    /* Init Pages */
+    init();
 </script>
+<script type="text/javascript"
+        src="http://www.pacificwizard.com.au//mobileapps/fullclipradio-webservices/player.js"></script>
 </body>
 </html>
