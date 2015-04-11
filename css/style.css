@@ -77,16 +77,14 @@
     background: linear-gradient(#F8FAED, #BCC94B); /* Standard syntax */
 }
 
-#nav1, #nav2, #nav3, #nav4, #nav5 {
+#nav1, #nav2, #nav3, #nav4 {
     border-right-color: #5D5D5D;
     border-right-width: 1px;
     border-right-style: solid;
 }
 
 #nav1 {
-    border-left-color: #5D5D5D;
-    border-left-width: 1px;
-    border-left-style: solid;
+
 }
 
 #home-competitions {
