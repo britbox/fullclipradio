@@ -172,7 +172,7 @@ h2.contact {
     position: relative;
     float: left;
     width: 100%;
-    margin-top: 95px;
+    margin-top: 80px;
 }
 
 .btn-success {
@@ -235,4 +235,23 @@ img.showlist {
     .navigation li:not(:first-child):before {
         content: '| ';
     }
+}
+
+@media (max-width: 480px) {
+
+    .page {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 760px) {
+
+    .page {
+        margin-top: 65px;
+    }
+}
+
+#links img {
+    margin-right: 1px;
+    margin-bottom: 1px;
 }
