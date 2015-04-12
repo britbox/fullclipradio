@@ -1,8 +1,7 @@
 @font-face {
-    font-family: "ImpactFont";
-    src: url("../fonts/impact.ttf");
-    /* Make sure you defined the correct path, which is related to
-        the location of your file `my_css.css` */
+    font-family: ImpactFont;
+    src: url('../fonts/impact.eot');
+    src: url('../fonts/impact.eot?#iefix') format('embedded-opentype'), url('../fonts/impact.woff') format('woff'), url('../fonts/impact.ttf') format('truetype'), url('../fonts/impact.svg') format('svg')
 }
 
 
@@ -86,7 +85,7 @@
 
 }
 
-#home-competitions {
+#home-competitions, #hot-competitions, #youtube {
     position: relative;
     float: left;
     width: 100%;
@@ -101,7 +100,7 @@
 h3 {
     margin-top: 0px;
     padding-top: 0px;
-    font-family: "ImpactFont", Helvetica Neue, Arial, sans-serif;
+    font-family: ImpactFont, Impact, Helvetica Neue, Arial, sans-serif;
     font-size: 24px;
 }
 
@@ -114,7 +113,7 @@ h3 {
     margin-right: 0px !important;
 }
 
-#home-competitions img {
+#home-competitions img, #hot-competitions img {
     min-width: 85px;
 }
 
@@ -126,7 +125,7 @@ h3 {
 
 h2 {
     background-color: #AEBD26;
-    font-family: "ImpactFont", Helvetica Neue, Arial, sans-serif;
+    font-family: ImpactFont, Impact, Helvetica Neue, Arial, sans-serif;
     font-size: 24px;
 }
 
@@ -141,14 +140,99 @@ h2.heart {
     background-position-x: 5px;
 }
 
+h2.competition {
+    padding-left: 40px;
+    background-image: url(../img/icon-competitions.png);
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
+h2.whatshot {
+    padding-left: 40px;
+    background-image: url(../img/icon-whatshot.png);
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
+h2.shoutout {
+    padding-left: 40px;
+    background-image: url(../img/icon-shoutout.png);
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
+h2.contact {
+    padding-left: 40px;
+    background-image: url(../img/icon-tel.png);
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
 .page {
     position: relative;
     float: left;
     width: 100%;
-    margin-top: 75px;
+    margin-top: 95px;
 }
 
 .btn-success {
     background-color: #AEBD26 !important;
     border-color: #939F20 !important;
+}
+
+#home-competitions a, #home-competitions a:hover, #home-competitions a:active, #home-competitions a:visited, #hot-competitions a, #hot-competitions a:hover, #hot-competitions a:active, #hot-competitions a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#instafeed a img {
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+
+#youtube a, #youtube a:hover, #youtube a:active, #youtube a:visited, #hot-competitions a, #hot-competitions a:hover, #hot-competitions a:active, #hot-competitions a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.imgcenter {
+    margin: auto;
+}
+
+#contact img {
+
+    margin-top: 15px;
+}
+
+form label {
+    text-align: center;
+    width: 100%;
+}
+
+img.showlist {
+    margin-bottom: 5px;
+}
+
+#team, #showindex {
+    float: left;
+}
+
+.modal {
+    overflow: auto;
+    color: #333;
+}
+
+@media (min-width: 481px) {
+    .navigation {
+        list-style: none;
+        padding: 0;
+    }
+
+    .navigation li {
+        display: inline-block;
+    }
+
+    .navigation li:not(:first-child):before {
+        content: '| ';
+    }
 }
