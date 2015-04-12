@@ -160,3 +160,11 @@ function process_shoutout() {
 
 
 }
+
+function init2() {
+    document.addEventListener("deviceready", onDR, false);
+}
+function onDR() {
+    document.addEventListener("backbutton", backKeyDown, true);
+    //boot your app...
+}

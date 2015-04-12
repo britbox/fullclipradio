@@ -168,6 +168,22 @@ h2.contact {
     background-position-x: 5px;
 }
 
+h2.currentshows {
+    padding-left: 40px;
+    background-image: url(../img/icon-shows.png);
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+
+}
+
+h2.theteam {
+    padding-left: 40px;
+    background-image: url(../img/icon-team.png);
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+
+}
+
 .page {
     position: relative;
     float: left;
